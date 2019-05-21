@@ -2,14 +2,14 @@ var Sequelize = require('sequelize')
 var fs        = require("fs")
 var path      = require("path")
 
-var dev  = {
-	connectionLimit : 10,
-	host            : 'localhost',
-	user            : 'root',
-	password        : '',
-	database        : 'locale_ai',
-	waitForConnection: true
-}
+// var dev  = {
+// 	connectionLimit : 10,
+// 	host            : 'localhost',
+// 	user            : 'root',
+// 	password        : '',
+// 	database        : 'locale_ai',
+// 	waitForConnection: true
+// }
 
 
 var prod  = {

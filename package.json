@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "migrate": "sequelize-auto -o \"./models\" -d locale_ai -h localhost -u root -p 3306 -e mysql"
+    "migrate": "sequelize-auto -o \"./models\" -d locale_ai -h localhost -u root -p 3306 -e mysql",
+    "migrate-prod": "sequelize-auto -o \"./models\" -d locale_ai -h arpit-db-instance.cjowjb4iaroa.us-east-1.rds.amazonaws.com -u arpitansu -p 3306 -x arpit1995 -e mysql"
   },
   "dependencies": {
     "@types/node": "^12.0.2",
