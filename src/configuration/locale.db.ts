@@ -28,6 +28,13 @@ const sequelize = new Sequelize(mysql.database, mysql.user, mysql.password,{
 	port:3306,
 	dialect:'mysql',
 	// logging : true,
+	pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  },
+	
 	define: {
 		underscored: true,
 		freezeTsableName: true, //use singular table name
