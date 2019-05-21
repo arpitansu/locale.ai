@@ -3,11 +3,19 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Sequelize = require('sequelize');
 var fs = require("fs");
 var path = require("path");
+// var dev  = {
+// 	connectionLimit : 10,
+// 	host            : 'localhost',
+// 	user            : 'root',
+// 	password        : '',
+// 	database        : 'locale_ai',
+// 	waitForConnection: true
+// }
 var prod = {
     connectionLimit: 10,
-    host: 'localhost',
-    user: 'root',
-    password: '',
+    host: 'arpit-db-instance.cjowjb4iaroa.us-east-1.rds.amazonaws.com',
+    user: 'arpitansu',
+    password: 'arpit1995',
     database: 'locale_ai',
     waitForConnection: true
 };
