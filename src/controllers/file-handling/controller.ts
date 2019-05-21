@@ -24,9 +24,9 @@ export function upload(req, res){
         }
         else if(isValid.status){
             //call the save data
-            // let saveData = new SaveToDatabase(filePath);
-            // let save = await saveData.execute()
-            // isValid.trackback = save
+            let saveData = new SaveToDatabase(filePath);
+            let save = await saveData.execute()
+            isValid.trackback = save
         }
 
         res.json(isValid)
