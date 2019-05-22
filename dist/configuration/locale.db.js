@@ -13,9 +13,9 @@ var path = require("path");
 // }
 var prod = {
     connectionLimit: 10,
-    host: 'arpit-db-instance.cjowjb4iaroa.us-east-1.rds.amazonaws.com',
-    user: 'arpitansu',
-    password: 'arpit1995',
+    host: 'test-db-instance.cvixesxjyuem.ap-south-1.rds.amazonaws.com',
+    user: 'test',
+    password: 'test12345',
     database: 'locale_ai',
     waitForConnection: true
 };
@@ -25,12 +25,6 @@ var sequelize = new Sequelize(mysql.database, mysql.user, mysql.password, {
     port: 3306,
     dialect: 'mysql',
     // logging : true,
-    pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
-    },
     define: {
         underscored: true,
         freezeTsableName: true,
